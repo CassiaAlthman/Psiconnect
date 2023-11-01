@@ -5,11 +5,14 @@
 ### 📈 Modelagem de Diagramas
 
 1. Casos de uso
+   <br>
     1.1 [Geral](modelagem/diagramas/casos-de-uso/geral.png)
+   <br>
     1.2 [Específico Aluno](modelagem/diagramas/casos-de-uso/especificacao-aluno.png)
+   <br>
     1.3 [Específico Paciente](modelagem/diagramas/casos-de-uso/especificacao-paciente.png)
-2. [Classes](modelagem/diagramas/classes/diagramaClasses.png)
-3. [Atividades](modelagem/diagramas/atividades/geral.png)
+3. [Classes](modelagem/diagramas/classes/diagramaClasses.png)
+4. [Atividades](modelagem/diagramas/atividades/geral.png)
 
 ### 📌 Funcionalidades
 

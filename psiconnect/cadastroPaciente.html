@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Psiconnect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="cadastro__paciente">
+            <img class="logo" src="images/logo.png" alt="Logo Psiconnect">
+            <section class="cadastro__paciente__conteudo">
+                <h1 class="cadastro__paciente__conteudo__titulo">Welcome to 
+                    <strong class="titulo-destaque">Psiconnect</strong>
+                </h1>
+                <h2 class="cadastro__paciente__conteudo__subtitulo">Complete o cadastro</h2>
+                <form>
+                    <div class="cadastro__paciente__space">
+                        <input class="cadastro__paciente__email" type="email" id="emailCadastroPaciente" name="emailCadastroPaciente" placeholder="Email">
+                    </div>
+                    <div class="cadastro__paciente__conteudo__checkbox">
+                        <input class="cadastro__paciente__checkbox" type="checkbox" id="programaResidencia" name="programaResidencia">
+                        <label class="cadastro__paciente__checkbox__texto" for="programaResidencia">Participa do programa de Residência em Área da Saúde?</label>
+                    </div>
+                    <div class="cadastro__paciente__space">
+                        <input class="cadastro__paciente__senha" type="password" id="senhaCadastroPaciente" name="senhaCadastroPaciente" placeholder="Senha">
+                    </div>
+                    <div class="cadastro__paciente__conteudo__label">
+                        <label class="cadastro__paciente__label">1. Mínimo de 8 caracteres.</label>
+                        <label class="cadastro__paciente__label">2. Maiúsculas, minúsculas, números e símbolos.</label>
+                    </div>
+                    <div class="cadastro__paciente__space">
+                        <input class="cadastro__paciente__confirmar__senha" type="password" id="confirmarSenhaCadastroPaciente" name="confirmarSenhaCadastroPaciente" placeholder="Confirmar senha">
+                    </div>
+                
+                    <div class="cadastro__paciente__space">
+                        <button class="cadastro__aluno__continuar" onclick="window.location.href = 'cadastroPacienteDados.html'">Continuar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

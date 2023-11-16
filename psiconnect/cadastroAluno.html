@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Psiconnect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="cadastro__aluno">
+            <img class="logo" src="images/logo.png" alt="Logo Psiconnect">
+            <section class="cadastro__aluno__conteudo">
+                <h1 class="cadastro__aluno__conteudo__titulo">Welcome to 
+                    <strong class="titulo-destaque">Psiconnect</strong>
+                </h1>
+                <h2 class="cadastro__aluno__conteudo__subtitulo">Complete o cadastro</h2>
+                <form action="php/send-email.php" method="post">
+                    <div class="cadastro__aluno__space">
+                        <input class="cadastro__aluno__email" type="email" id="emailCadastroAluno" name="emailCadastroAluno" placeholder="Email">
+                    </div>
+                    <div class="cadastro__aluno__conteudo__checkbox">
+                        <input class="cadastro__aluno__checkbox" type="checkbox" id="programaResidencia" name="programaResidencia">
+                        <label class="cadastro__aluno__checkbox__texto" for="programaResidencia">Participa do programa de Residência em Área da Saúde?</label>
+                    </div>
+                    <div class="cadastro__aluno__space">
+                        <input class="cadastro__aluno__ra" type="text" id="ra" name="ra" placeholder="RA">
+                    </div>
+                    <div class="cadastro__aluno__space">
+                        <input class="cadastro__aluno__senha" type="password" id="senhaCadastroAluno" name="senhaCadastroAluno" placeholder="Senha">
+                    </div>
+                    <div class="cadastro__aluno__conteudo__label">
+                        <label class="cadastro__aluno__label">1. Mínimo de 8 caracteres.</label>
+                        <label class="cadastro__aluno__label">2. Maiúsculas, minúsculas, números e símbolos.</label>
+                    </div>
+                    <div class="cadastro__aluno__space">
+                        <input class="cadastro__aluno__confirmar__senha" type="password" id="confirmarSenhaCadastroAluno" name="confirmarSenhaCadastroAluno" placeholder="Confirmar senha">
+                    </div>
+                    <div class="cadastro__aluno__space">
+                        <button class="cadastro__aluno__enviar" >Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

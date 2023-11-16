@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Psiconnect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="cadastro__paciente__dados">
+            <section class="cadastro__paciente__dados__conteudo">
+                <h1 class="cadastro__conteudo__titulo">Welcome to 
+                    <strong class="titulo-destaque">Psiconnect</strong>
+                </h1>
+                <div class="cadastro__conteudo__subtitulo">
+                    <h2 class="cadastro__subtitulo">Dados Cadastrais</h2>
+                </div>
+                <div class="cadastro__conteudo__separador">
+                    <hr class="linha-separador-dados-pessoais">
+                    <p class="separador">DADOS PESSOAIS</p>
+                    <hr class="linha-separador-dados-pessoais">
+                </div>
+                <form class="form-dados-pessoais">
+                    <div>
+                        <div class="form-dados-space">
+                            <input class="form-nome" type="text" id="nome" name="nome" placeholder="Nome">
+                            <input class="form-sobrenome" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                        </div>
+                        <div class="form-dados-space">
+                            <input class="form-cpf" type="text" id="cpf" name="cpf" placeholder="Cpf">
+                            <input class="form-telefone" type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                            <select class="form-genero" id="genero" name="genero" placeholder="Gênero">
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="outro">Outro</option>
+                                <option value="prefiroNaoDizer">Prefiro não dizer</option>
+                            </select>
+                            <input class="form-data-nascimento" type="date" id="dataNascimento" name="dataNascimento" placeholder="Data Nascimento">
+                        </div>
+                    </div>
+                </form>
+                <div class="cadastro__conteudo__separador">
+                    <hr class="linha-separador-endereco">
+                    <p class="separador">ENDEREÇO</p>
+                    <hr class="linha-separador-endereco">
+                </div>
+                <form class="form-dados-endereco">
+                    <div>
+                        <div class="form-dados-space">
+                            <input class="form-endereco" type="text" id="endereco" name="endereco" placeholder="Endereço">
+                            <input class="form-cidade" type="text" id="cidade" name="cidade" placeholder="Cidade">
+                            <select class="form-uf" id="uf" name="uf" placeholder="UF">
+                                <option value="ro">RO</option>
+                                <option value="ac">AC</option>
+                                <option value="am">AM</option>
+                                <option value="rr">RR</option>
+                                <option value="pa">PA</option>
+                                <option value="ap">AP</option>
+                                <option value="to">TO</option>
+                                <option value="ma">MA</option>
+                                <option value="pi">PI</option>
+                                <option value="ce">CE</option>
+                                <option value="rn">RN</option>
+                                <option value="pb">PB</option>
+                                <option value="pe">PE</option>
+                                <option value="al">AL</option>
+                                <option value="se">SE</option>
+                                <option value="ba">BA</option>
+                                <option value="mg">MG</option>
+                                <option value="es">ES</option>
+                                <option value="rj">RJ</option>
+                                <option value="sp">SP</option>
+                                <option value="pr">PR</option>
+                                <option value="sc">SC</option>
+                                <option value="rs">RS</option>
+                                <option value="ms">MS</option>
+                                <option value="mt">MT</option>
+                                <option value="go">GO</option>
+                                <option value="df">DF</option>
+                            </select>
+                        </div>
+                        <div class="form-dados-space">
+                            <input class="form-cep" type="text" id="cep" name="cep" placeholder="Cep">
+                            <input class="form-numero" type="text" id="numero" name="numero" placeholder="Número">
+                            <input class="form-complemento" type="text" id="complemento" name="complemento" placeholder="Complemento">
+                        </div>
+                    </div>
+                </form>
+                <div class="cadastro__paciente__dados__button">
+                    <button class="cadastro__paciente__dados__voltar" onclick="window.location.href = 'cadastroPaciente.html'">Voltar</button>
+                    <button class="cadastro__paciente__dados__continuar" onclick="window.location.href = 'cadastroPacienteDadosComplementares.html'">Continuar</button>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

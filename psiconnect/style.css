@@ -1,0 +1,1015 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+}
+
+.login {
+    margin-top: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 300px; 
+}
+
+.login__conteudo {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 525px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    flex-direction: column;
+}
+
+.login__conteudo__titulo {
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.titulo-destaque {
+    color: #6358DC;
+    font-weight: 900;
+    font-size: 34px;
+}
+
+.login__with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login__with__button {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login__with__logo {
+    height: 15px;
+}
+
+.login__conteudo__separador {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.linha-separador {
+    border-color: lightgray;
+    width: 180px;
+}
+
+.separador {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-size: 10px;
+}
+
+.login__conteudo__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__conteudo__input__email {
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.login__conteudo__input__password {
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+    background-image: url('images/password_icon.png'), url('images/bi_eye-fill.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center, calc(100% - 10px);
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.remember__me__forgot__password {
+    margin-bottom: 5px;
+    margin-right: 26px;
+    margin-left: 26px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+
+.remember__me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember__me__texto {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.login__conteudo__forgot__password {
+    display: flex;
+    margin-bottom: 10px;
+    color: #6358DC;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.login__button {
+    display: flex;
+    justify-content: center;
+}
+
+.login__button__format {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #6358DC;
+    color: #FFFFFF;
+    width: 400px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__conteudo__novo__usuario {
+    display: flex;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Poppins';
+    font-size: 10px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.novo-usuario-destaque {
+    color: #6358DC;
+    font-weight: 400;
+}
+
+.login__conteudo__subtitulo {
+    margin-bottom: 40px;
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.login__button__format__new__user {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: #6358DC;
+    color: #FFFFFF;
+    width: 400px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__fixo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__titulo {
+    margin-top: 20px;
+    margin-left: 4%;
+    color: #6358DC;
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.menu__perfil {
+    margin-top: 20px;
+    margin-right: 4%;
+    background-color: #D9D9D9;
+    background-image: url('images/circle_perfil.png'), url('images/ellipse_perfil.png');
+    background-size: 25px, 40px;
+    background-repeat: no-repeat;
+    background-position: center 40%, center 100%;
+    border-radius: 100%;
+    border-width: 0;
+    width: 60px;
+    height: 60px; 
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.menu__button {
+    margin: 125px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu__paciente__agenda {
+    background-color: #FFFFFF;
+    background-image: url('images/icone_agenda.png'), linear-gradient(to bottom, #FFFFFF 70%, #6358dc 30%);
+    background-size: 100px, 200px;
+    background-repeat: no-repeat;
+    background-position: center 30px, center 70%;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 135px;
+}
+
+.menu__paciente__historico {
+    background-color: #FFFFFF;
+    background-image: url('images/icone_historico.png'), linear-gradient(to bottom, #FFFFFF 70%, #6358dc 30%);
+    background-size: 100px, 200px;
+    background-repeat: no-repeat;
+    background-position: center 30px, center 70%;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 135px;
+}
+
+.menu__aluno__solicitacoes {
+    background-color: #FFFFFF;
+    background-image: url('images/icone_solicitacoes.png'), linear-gradient(to bottom, #FFFFFF 70%, #6358dc 30%);
+    background-size: 100px, 200px;
+    background-repeat: no-repeat;
+    background-position: center 45px, center 70%;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 135px;
+}
+
+.menu__aluno__historico {
+    background-color: #FFFFFF;
+    background-image: url('images/icone_historico.png'), linear-gradient(to bottom, #FFFFFF 70%, #6358dc 30%);
+    background-size: 100px, 200px;
+    background-repeat: no-repeat;
+    background-position: center 30px, center 70%;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 135px;
+}
+
+.menu__solicitacao__paciente__cancelar__conteudo {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__solicitacao__paciente__cancelar__titulo {
+    display: flex;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__solicitacao__paciente__cancelar__button {
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu__solicitacao__cancelar {
+    background-color: #F14336;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.menu__solicitacao__voltar {
+    background-color: #6358DC;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.menu__solicitacao__confirmar__conteudo {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__solicitacao__confirmar__titulo {
+    display: flex;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__solicitacao__paciente__confirmar__button {
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu__solicitacao__confirmar {
+    background-color: #518EF8;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.cadastro__paciente__dados {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__paciente__dados__conteudo {
+    background-color: #FFFFFF;
+    width: 1000px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.cadastro__conteudo__titulo {
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.cadastro__conteudo__subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro__subtitulo {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cadastro__conteudo__separador {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.linha-separador-dados-pessoais {
+    border-color: lightgray;
+    width: 400px;
+}
+
+.form-dados-pessoais {
+    display: flex;
+    justify-content: center;
+}
+
+.form-dados-space {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-nome {
+    margin-right: 50px;
+    background-color: #ECECEC;
+    width: 375px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-sobrenome {
+    background-color: #ECECEC;
+    width: 470px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-cpf {
+    margin-right: 20px;
+    background-color: #ECECEC;
+    width: 275px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-telefone {
+    margin-right: 20px;
+    background-color: #ECECEC;
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-genero {
+    margin-right: 20px;
+    background-color: #ECECEC;
+    width: 150px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-data-nascimento {
+    background-color: #ECECEC;
+    width: 150px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.linha-separador-endereco {
+    border-color: lightgray;
+    width: 415px;
+}
+
+.form-dados-endereco {
+    display: flex;
+    justify-content: center;
+}
+
+.form-endereco {
+    margin-right: 50px;
+    background-color: #ECECEC;
+    width: 400px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-cidade {
+    margin-right: 50px;
+    background-color: #ECECEC;
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-uf {
+    background-color: #ECECEC;
+    width: 150px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-cep {
+    margin-right: 50px;
+    background-color: #ECECEC;
+    width: 200px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-numero {
+    margin-right: 50px;
+    background-color: #ECECEC;
+    width: 150px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.form-complemento {
+    background-color: #ECECEC;
+    width: 450px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__paciente__dados__button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cadastro__paciente__dados__voltar {
+    background-color: #6358DC;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.cadastro__paciente__dados__continuar {
+    background-color: #6358DC;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.cadastro__aluno {
+    margin-top: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cadastro__aluno__conteudo {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 525px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    flex-direction: column;
+}
+
+.cadastro__aluno__conteudo__titulo {
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.cadastro__aluno__conteudo__subtitulo {
+    margin-bottom: 20px;
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.cadastro__aluno__space {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__aluno__email {
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__aluno__conteudo__checkbox {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro__aluno__checkbox {
+    margin-right: 5px;
+}
+
+.cadastro__aluno__checkbox__texto {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.cadastro__aluno__ra {
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__aluno__senha {
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__aluno__conteudo__label {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro__aluno__label {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.cadastro__aluno__confirmar__senha {
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__aluno__enviar {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #6358DC;
+    color: #FFFFFF;
+    width: 400px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.cadastro__paciente {
+    margin-top: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cadastro__paciente__conteudo {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 525px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    flex-direction: column;
+}
+
+.cadastro__paciente__conteudo__titulo {
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.cadastro__paciente__conteudo__subtitulo {
+    margin-bottom: 20px;
+    display: flex;
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.cadastro__paciente__space {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__paciente__email {
+    margin-bottom: 20px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__paciente__conteudo__checkbox {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro__paciente__checkbox {
+    margin-right: 5px;
+}
+
+.cadastro__paciente__checkbox__texto {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.cadastro__paciente__senha {
+    margin-bottom: 20px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__paciente__conteudo__label {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro__paciente__label {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.cadastro__paciente__confirmar__senha {
+    margin-bottom: 20px;
+    background-color: #ECECEC;
+    background-image: url('images/email_icon.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #2F2F2F;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__aluno__continuar {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #6358DC;
+    color: #FFFFFF;
+    width: 400px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.cadastro__paciente__dados__complementares {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__paciente__dados__complementares__conteudo {
+    background-color: #FFFFFF;
+    width: 1000px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.cadastro__paciente__dados__complementares__form {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__paciente__radio__label {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cadastro__paciente__radio {
+    margin-top: 2px;
+    color: #2F2F2F;
+}

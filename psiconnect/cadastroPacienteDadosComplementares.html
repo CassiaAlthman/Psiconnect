@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Psiconnect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="cadastro__paciente__dados__complementares">
+            <section class="cadastro__paciente__dados__complementares__conteudo">
+                <h1 class="cadastro__conteudo__titulo">Welcome to 
+                    <strong class="titulo-destaque">Psiconnect</strong>
+                </h1>
+                <div class="cadastro__conteudo__subtitulo">
+                    <h2 class="cadastro__subtitulo">Informações Complementares</h2>
+                </div>
+                <form class="cadastro__paciente__dados__complementares__form">
+                    <div>
+                        <div class="cadastro__paciente__grau_escolaridade">
+                            <div>
+                                <label class="cadastro__paciente__radio__label">Grau de escolaridade:<br></label>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="s_escolaridade"/> Sem escolaridade<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="fund_incom"/> Ensino Fundamental Incompleto<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="fund_com"/> Ensino Fundamental Completo<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="medio_incom"/> Ensino Médio Incompleto<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="medio_com"/> Ensino Médio Completo<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="sup_incom"/> Ensino Superior Incompleto<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="sup_com"/> Ensino Superior Completo<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="grauEscolaridade" value="sem_resposta"/> Prefino não responder
+                            </div>
+                        </div>
+                        <div class="cadastro__paciente__situacao_emprego">
+                            <div>
+                                <label class="cadastro__paciente__radio__label">Atualmente, está empregado(a)?<br></label>
+                                <input class="cadastro__paciente__radio" type="radio" name="situacaoEmprego" value="sim"/> Sim<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="situacaoEmprego" value="nao"/> Não<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="situacaoEmprego" value="sem_resposta"/> Prefiro não responder
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cadastro__paciente__pessoa__com__deficiencia">
+                            <div>
+                                <label class="cadastro__paciente__radio__label">É Pessoa com Deficiência (PcD)?<br></label>
+                                <input class="cadastro__paciente__radio" type="radio" name="pcd" value="sim"/> Sim<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="pcd" value="nao"/> Não<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="pcd" value="sem_resposta"/> Prefiro não responder
+                                <input class="" type="text" id="tipoDeficiencia" name="tipoDeficiencia" placeholder="Opcional">
+                            </div>
+                        </div>
+                        <div class="cadastro__paciente__plano__saude">
+                            <div>
+                                <label class="cadastro__paciente__radio__label">Possui plano de saúde?<br></label>
+                                <input class="cadastro__paciente__radio" type="radio" name="planoSaude" value="sim"/> Sim<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="planoSaude" value="nao"/> Não<br>
+                                <input class="cadastro__paciente__radio" type="radio" name="planoSaude" value="sem_resposta"/> Prefiro não responder
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

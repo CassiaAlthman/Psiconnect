@@ -12,7 +12,10 @@
    <br>
     1.3 [Específico Paciente](modelagem/diagramas/casos-de-uso/especificacao-paciente.png)
 3. [Classes](modelagem/diagramas/classes/diagramaClasses.png)
-4. [Atividades](modelagem/diagramas/atividades/geral.png)
+4. Sequências
+    <br>
+    1.2 [Específico Cadastro](modelagem/diagramas/sequencia/sequenciaCadastro.png)
+5. [Atividades](modelagem/diagramas/atividades/geral.png)
 
 ### 📌 Funcionalidades
 
@@ -22,11 +25,14 @@
 
 3. Agendar Horários: O paciente, após escolher a data e horário, poderá enviar uma solicitação de agendamento.
 
+4. Conferir Histórico: O paciente e o estudante poderão acessar o histórico de consultas (concluídas/canceladas).
+
 ### 🔧 Tecnologias utilizadas
 
 - Java;
 - Html;
 - Css;
+- Php;
 - SQL.
 
 ### 🚀 Rodando o projeto

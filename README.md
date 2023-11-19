@@ -19,7 +19,8 @@
     3.2 [Específico Cadastro](modelagem/diagramas/sequencia/sequenciaCadastro.png)
     <br>
     3.3 [Específico Consulta](modelagem/diagramas/sequencia/sequenciaConsulta.png)
-4. [Atividades](modelagem/diagramas/atividades/geral.png)
+4. [Comunicação/colaboração](modelagem/diagramas/comunicacao/diagramaComunicacao.png)
+5. [Atividades](modelagem/diagramas/atividades/geral.png)
 
 ### 📌 Funcionalidades
 

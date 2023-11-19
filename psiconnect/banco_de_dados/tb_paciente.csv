@@ -1,0 +1,2 @@
+cd_paciente,cd_pessoa,ds_grau_escolaridade,fg_possui_emprego,fg_pessoa_com_deficiencia,ds_deficiencia,fg_plano_saude,cd_usuario_inclusao,dt_inclusao,cd_usuario_alteracao,dt_alteracao,fg_excluido
+1,1,ensino superior incompleto,1,0,null,0,null,2023-11-17 20:00:00,null,null,0

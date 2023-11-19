@@ -11,11 +11,15 @@
     1.2 [Específico Aluno](modelagem/diagramas/casos-de-uso/especificacao-aluno.png)
    <br>
     1.3 [Específico Paciente](modelagem/diagramas/casos-de-uso/especificacao-paciente.png)
-3. [Classes](modelagem/diagramas/classes/diagramaClasses.png)
-4. Sequências
+2. [Classes](modelagem/diagramas/classes/diagramaClasses.png)
+3. Sequências
     <br>
-    1.2 [Específico Cadastro](modelagem/diagramas/sequencia/sequenciaCadastro.png)
-5. [Atividades](modelagem/diagramas/atividades/geral.png)
+    3.1 [Geral](modelagem/diagramas/sequencia/sequenciaGeral.png)
+    <br>
+    3.2 [Específico Cadastro](modelagem/diagramas/sequencia/sequenciaCadastro.png)
+    <br>
+    3.3 [Específico Consulta](modelagem/diagramas/sequencia/sequenciaConsulta.png)
+4. [Atividades](modelagem/diagramas/atividades/geral.png)
 
 ### 📌 Funcionalidades
 

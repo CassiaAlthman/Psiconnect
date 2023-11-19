@@ -1,0 +1,2 @@
+cd_aluno,cd_pessoa,ds_ra,ds_instituicao_ensino,ds_semestre,ds_periodo,cd_usuario_inclusao,dt_inclusao,cd_usuario_alteracao,dt_alteracao,fg_excluido
+1,2,543342012,Universidade São Judas Tadeu,2,N,101,2023-11-17 20:00:00,null,null,0

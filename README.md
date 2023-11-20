@@ -23,9 +23,11 @@
 5. [Atividades](modelagem/diagramas/atividades/geral.png)
 6. Estados
     <br>
-    6.2 [Específico Cadastro Aluno](modelagem/diagramas/estados/estadoCadastroAluno.png)
+    6.1 [Geral](modelagem/diagramas/estados/estadosGeral.png)
     <br>
-    6.3 [Específico Consulta](modelagem/diagramas/estados/estadoConsulta.png)
+    6.2 [Específico Cadastro](modelagem/diagramas/estados/estadosCadastro.png)
+    <br>
+    6.3 [Específico Consulta](modelagem/diagramas/estados/estadosConsulta.png)
 
 ### 📌 Funcionalidades
 

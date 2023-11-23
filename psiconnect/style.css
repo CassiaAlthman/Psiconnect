@@ -340,6 +340,29 @@ body {
     padding-top: 135px;
 }
 
+.menu__button__sair {
+    margin: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__sair {
+    background-color: #F14336;
+    background-image: url('images/logo_sair.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 5px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding-left: 10px;
+}
+
 .menu__solicitacao__paciente__cancelar__conteudo {
     margin: 100px;
     display: flex;
@@ -992,7 +1015,7 @@ body {
 .cadastro__paciente__dados__complementares__conteudo {
     background-color: #FFFFFF;
     width: 1000px;
-    height: 600px;
+    height: 700px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
@@ -1000,6 +1023,10 @@ body {
     margin: 40px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.cadastro__paciente__grau_escolaridade {
+    margin-bottom: 50px;
 }
 
 .cadastro__paciente__radio__label {
@@ -1012,4 +1039,122 @@ body {
 .cadastro__paciente__radio {
     margin-top: 2px;
     color: #2F2F2F;
+}
+
+.label__radio {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.cadastro__paciente__pessoa__com__deficiencia {
+    margin-bottom: 50px;
+}
+
+.cadastro__paciente__pessoa__com__deficiencia___input {
+    margin-top: 42px;
+}
+
+.cadastro__paciente__input__label {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cadastro__paciente__pessoa__com__deficiencia__input__text {
+    background-color: #ECECEC;
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+    text-indent: 30px;
+}
+
+.cadastro__paciente__dados__complementares__button {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__paciente__dados__complementares__voltar {
+    background-color: #6358DC;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.cadastro__paciente__dados__complementares__finalizar {
+    background-color: #6358DC;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.menu__historico__aluno__format {
+    display: flex;
+    flex-direction: column;
+    gap: 350px;
+}
+
+.menu__historico__subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.historico__subtitulo {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.menu__historico__voltar {
+    background-color: #6358DC;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.menu__historico__aluno__total__horas {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.menu__historico__aluno__end__format {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__historico__paciente__format {
+    display: flex;
+    flex-direction: column;
+    gap: 350px;
+}
+
+.menu__historico__paciente__end__format {
+    display: flex;
+    justify-content: space-around;
 }

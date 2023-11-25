@@ -52,7 +52,7 @@
 Para obter acesso ao projeto é necessário realizar clonar o repositório e executar o comando:
 
 ```
-
+npm install papaparse
 ```
 
 ### 🤝 Colaboradores

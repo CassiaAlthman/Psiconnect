@@ -185,7 +185,10 @@ body {
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border-radius: 5px;
+    border-width: 0;
     align-items: center;
     justify-content: center;
 }
@@ -278,6 +281,7 @@ body {
     height: 200px;
     border-radius: 30px;
     border-width: 0;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     color: #FFFFFF;
     font-family: 'Poppins';
@@ -296,6 +300,7 @@ body {
     height: 200px;
     border-radius: 30px;
     border-width: 0;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     color: #FFFFFF;
     font-family: 'Poppins';
@@ -314,6 +319,7 @@ body {
     height: 200px;
     border-radius: 30px;
     border-width: 0;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     color: #FFFFFF;
     font-family: 'Poppins';
@@ -332,6 +338,7 @@ body {
     height: 200px;
     border-radius: 30px;
     border-width: 0;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     color: #FFFFFF;
     font-family: 'Poppins';
@@ -359,6 +366,7 @@ body {
     font-weight: 600;
     border-radius: 5px;
     border-width: 0;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     padding-left: 10px;
 }
@@ -1157,4 +1165,226 @@ body {
 .menu__historico__paciente__end__format {
     display: flex;
     justify-content: space-around;
+}
+
+.cadastro__confirmacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro__confirmacao__conteudo {
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro__confirmacao__titulo {
+    display: flex;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro__confirmacao__login__button {
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cadastro__confirmacao__login {
+    background-color: #518EF8;
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.menu__solicitacoes__subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.solicitacoes__subtitulo {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.menu__solicitacoes__buttons {
+    margin-top: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu__solicitacoes__andamento__button {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #518EF8;
+    color: #FFFFFF;
+    width: 400px;
+    height: 50px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__solicitacoes__voltar__button {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #6358DC;
+    color: #FFFFFF;
+    width: 400px;
+    height: 50px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__solicitacoes__andamento__buttons {
+    margin-top: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu__agenda__subtitulo {
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+.mes__ano__subtitulo {
+    color: #2F2F2F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.agenda__mes__subtitulo {
+    color: #BB99F2;
+    font-weight: 900;
+}
+
+.menu__agenda__calendario {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calendario__dias__semana {
+    display: flex;
+    gap: 10px;
+}
+
+.dias__semana__label {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.calendario__dia__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data__button {
+    margin-bottom: 5px;
+    display: flex;
+    background-color: #D9D9D9;
+    width: 125px;
+    height: 72px;
+    border-width: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.menu__agenda__interativo {
+    margin-top: 50px;
+    display: flex;
+    height: 432px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__agenda__horarios__descricoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__agenda__horarios_subtitulo {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.menu__agenda__horarios__alerta__subtitulo {
+    color: #F14336;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.menu__agenda__buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__agenda__confirmar__button {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #518EF8;
+    color: #FFFFFF;
+    width: 250px;
+    height: 60px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__agenda__voltar__button {
+    display: flex;
+    background-color: #6358DC;
+    color: #FFFFFF;
+    width: 250px;
+    height: 60px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
 }

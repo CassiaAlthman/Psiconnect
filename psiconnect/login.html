@@ -12,39 +12,56 @@
         <main class="login">
             <img class="logo" src="images/logo.png" alt="Logo Psiconnect">
             <section class="login__conteudo">
-                <h1 class="login__conteudo__titulo">Welcome to 
-                    <strong class="titulo-destaque">Psiconnect</strong>
-                </h1>
-                <div class="login__with">
-                    <a class="login__with__button" href="">
-                        <img class="login__with__logo" src="images/google.png" alt="Logo do Google"> Login with Google
-                    </a>
-                    <a class="login__with__button" href="">
-                        <img class="login__with__logo" src="images/facebook.png" alt="Logo do Facebook"> Login with Facebook
-                    </a>
-                </div>
-                <div class="login__conteudo__separador">
-                    <hr class="linha-separador">
-                    <p class="separador">OR</p>
-                    <hr class="linha-separador">
-                </div>
-                <div class="login__conteudo__input">
-                    <input class="login__conteudo__input__email" type="email" name="email" placeholder="Email">
-                    <input class="login__conteudo__input__password" type="password" name="password" placeholder="Password">
-                </div>
-                <div class="remember__me__forgot__password">
-                    <div class="remember__me">
-                    <input class="remember__me__checkbox" type="checkbox" id="rme" name="rme">
-                    <label class="remember__me__texto" for="rme">Remember me</label>
+                <form id="login__conteudo__form">
+                    <h1 class="login__conteudo__titulo">Welcome to 
+                        <strong class="titulo-destaque">Psiconnect</strong>
+                    </h1>
+                    <div class="login__with">
+                        <a class="login__with__button" href="">
+                            <img class="login__with__logo" src="images/google.png" alt="Logo do Google"> Login with Google
+                        </a>
+                        <a class="login__with__button" href="">
+                            <img class="login__with__logo" src="images/facebook.png" alt="Logo do Facebook"> Login with Facebook
+                        </a>
                     </div>
-                    <a class="login__conteudo__forgot__password" href="">Forgot Password?</a>
-                </div>
-                <div class="login__button">
-                    <a class="login__button__format" href="">Login</a>
-                </div>
-                <a class="login__conteudo__novo__usuario" href="cadastro.html">Don't have an account?<strong class="novo-usuario-destaque">Register</strong></a>
+                    <div class="login__conteudo__separador">
+                        <hr class="linha-separador">
+                        <p class="separador">OR</p>
+                        <hr class="linha-separador">
+                    </div>
+                    <div class="login__conteudo__input">
+                        <input class="login__conteudo__input__email" id="email__login" type="email" name="email" placeholder="Email">
+                        <input class="login__conteudo__input__password" id="password__login" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="remember__me__forgot__password">
+                        <div class="remember__me">
+                        <input class="remember__me__checkbox" type="checkbox" id="rme" name="rme">
+                        <label class="remember__me__texto" for="rme">Remember me</label>
+                        </div>
+                        <a class="login__conteudo__forgot__password" href="">Forgot Password?</a>
+                    </div>
+                    <div class="login__button">
+                        <button class="login__button__format" type="button" onclick="validaUsuarioLogin();">Login</button>
+                    </div>
+                    <a class="login__conteudo__novo__usuario" href="cadastro.html">Don't have an account?<strong class="novo-usuario-destaque">Register</strong></a>
+                </form>
             </section>
         </main>
         <footer></footer>
+        <script type="text/javascript" src="javascript/papaparse.min.js"></script>
+        <script>
+            function validaUsuarioLogin() {
+                var email = document.getElementById('email__login').value;
+                var senha = document.getElementById('password__login').value;
+
+                //if (email == '' || senha == '') {
+                    //window.alert('Por favor insira os dados nos campos de email/senha');
+                    //return
+                //}
+
+                
+
+            };
+        </script>
     </body>
 </html>

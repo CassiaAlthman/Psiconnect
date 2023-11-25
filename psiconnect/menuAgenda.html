@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Psiconnect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="menu__agenda">
+            <div>
+                <div class="menu__fixo">
+                    <h1 class="menu__titulo">Psiconnect</h1>
+                    <div class="menu__agenda__subtitulo">
+                        <h2 class="mes__ano__subtitulo" id="month_year" name="month_year"></h2>
+                    </div>
+                    <input class="menu__perfil" type="button">
+                </div>
+            </div>
+            <section class="menu__agenda__calendario">
+                <div>
+                    <div class="calendario__dias__semana">
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Dom</label>
+                            <button class="data__button" id="dom__row__1" name="dom__row__1"></button>
+                            <button class="data__button" id="dom__row__2" name="dom__row__2"></button>
+                            <button class="data__button" id="dom__row__3" name="dom__row__3"></button>
+                            <button class="data__button" id="dom__row__4" name="dom__row__4"></button>
+                            <button class="data__button" id="dom__row__5" name="dom__row__5"></button>
+                            <button class="data__button" id="dom__row__6" name="dom__row__6"></button>
+                        </div>
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Seg</label>
+                            <button class="data__button" id="seg__row__1" name="seg__row__1"></button>
+                            <button class="data__button" id="seg__row__2" name="seg__row__2"></button>
+                            <button class="data__button" id="seg__row__3" name="seg__row__3"></button>
+                            <button class="data__button" id="seg__row__4" name="seg__row__4"></button>
+                            <button class="data__button" id="seg__row__5" name="seg__row__5"></button>
+                            <button class="data__button" id="seg__row__6" name="seg__row__6"></button>
+                        </div>
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Ter</label>
+                            <button class="data__button" id="ter__row__1" name="ter__row__1"></button>
+                            <button class="data__button" id="ter__row__2" name="ter__row__2"></button>
+                            <button class="data__button" id="ter__row__3" name="ter__row__3"></button>
+                            <button class="data__button" id="ter__row__4" name="ter__row__4"></button>
+                            <button class="data__button" id="ter__row__5" name="ter__row__5"></button>
+                            <button class="data__button" id="ter__row__6" name="ter__row__6"></button>
+                        </div>
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Qua</label>
+                            <button class="data__button" id="qua__row__1" name="qua__row__1"></button>
+                            <button class="data__button" id="qua__row__2" name="qua__row__2"></button>
+                            <button class="data__button" id="qua__row__3" name="qua__row__3"></button>
+                            <button class="data__button" id="qua__row__4" name="qua__row__4"></button>
+                            <button class="data__button" id="qua__row__5" name="qua__row__5"></button>
+                            <button class="data__button" id="qua__row__6" name="qua__row__6"></button>
+                        </div>
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Qui</label>
+                            <button class="data__button" id="qui__row__1" name="qui__row__1"></button>
+                            <button class="data__button" id="qui__row__2" name="qui__row__2"></button>
+                            <button class="data__button" id="qui__row__3" name="qui__row__3"></button>
+                            <button class="data__button" id="qui__row__4" name="qui__row__4"></button>
+                            <button class="data__button" id="qui__row__5" name="qui__row__5"></button>
+                            <button class="data__button" id="qui__row__6" name="qui__row__6"></button>
+                        </div>
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Sex</label>
+                            <button class="data__button" id="sex__row__1" name="sex__row__1"></button>
+                            <button class="data__button" id="sex__row__2" name="sex__row__2"></button>
+                            <button class="data__button" id="sex__row__3" name="sex__row__3"></button>
+                            <button class="data__button" id="sex__row__4" name="sex__row__4"></button>
+                            <button class="data__button" id="sex__row__5" name="sex__row__5"></button>
+                            <button class="data__button" id="sex__row__6" name="sex__row__6"></button>
+                        </div>
+                        <div class="calendario__dia__column">
+                            <label class="dias__semana__label">Sáb</label>
+                            <button class="data__button" id="sab__row__1" name="sab__row__1"></button>
+                            <button class="data__button" id="sab__row__2" name="sab__row__2"></button>
+                            <button class="data__button" id="sab__row__3" name="sab__row__3"></button>
+                            <button class="data__button" id="sab__row__4" name="sab__row__4"></button>
+                            <button class="data__button" id="sab__row__5" name="sab__row__5"></button>
+                            <button class="data__button" id="sab__row__6" name="sab__row__6"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__agenda__interativo">
+                    <div class="menu__agenda__horarios__descricoes">
+                        <h3 class="menu__agenda__horarios_subtitulo">Horários Disponíveis:</h3>
+                        <h4 class="menu__agenda__horarios__alerta__subtitulo">Selecione um horário para agendar</h4>
+                    </div>
+                    <div>
+                        <div class="menu__agenda__buttons">
+                            <button class="menu__agenda__confirmar__button" type="button" onclick="window.location.href = 'menuSolicitacaoConfirmar.html'">Agendar</button>
+                            <button class="menu__agenda__voltar__button" type="button" onclick="window.location.href = 'menuPaciente.html'">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script type="text/javascript">
+            window.onload = function calendar() {
+                setMonthYearTitle();
+                setCalendarDays(monthLength(), firstDayWeek());
+            };
+
+            function setMonthYearTitle() {
+                const dataAtual = new Date();
+                
+                const monthNames = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+                const month = dataAtual.getMonth();
+                const year = dataAtual.getFullYear();
+
+                document.getElementById('month_year').innerHTML = ('<strong class="agenda__mes__subtitulo">' + monthNames[month] + '</strong>' + ' ' + year);
+            }
+
+            function monthLength() {
+                const data = new Date();
+                const month = data.getMonth();
+                const year = data.getFullYear();
+
+                return new Date(year, month + 1, 0).getDate();
+            };
+
+            function firstDayWeek() {
+                const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+                const data = new Date();
+                const month = monthNames[data.getMonth()];
+                const year = data.getFullYear();
+
+                const search = month + ' 1, ' + year;
+
+                return new Date(search).getDay();
+            };
+
+            function setCalendarDays(contDays, day) {
+                switch(day) {
+                    case 0:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'dom__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'seg__row__' + j;
+                                }
+                                else if(i == 3) {
+                                    var id = 'ter__row__' + j;
+                                }
+                                else if(i == 4) {
+                                    var id = 'qua__row__' + j;
+                                }
+                                else if(i == 5) {
+                                    var id = 'qui__row__' + j;
+                                }
+                                else if(i == 6) {
+                                    var id = 'sex__row__' + j;
+                                }
+                                else {
+                                    var id = 'sab__row__' + j;
+                                }
+
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+
+                        break;
+                    case 1:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'seg__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'ter__row__' + j;
+                                }
+                                else if(i == 3) {
+                                    var id = 'qua__row__' + j;
+                                }
+                                else if(i == 4) {
+                                    var id = 'qui__row__' + j;
+                                }
+                                else if(i == 5) {
+                                    var id = 'sex__row__' + j;
+                                }
+                                else if(i == 6) {
+                                    var id = 'sab__row__' + j;
+                                }
+                                else {
+                                    var id = 'dom__row__' + (j + 1);
+                                }
+                                
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+
+                        break;
+                    case 2:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'ter__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'qua__row__' + j;
+                                }
+                                else if(i == 3) {
+                                    var id = 'qui__row__' + j;
+                                }
+                                else if(i == 4) {
+                                    var id = 'sex__row__' + j;
+                                }
+                                else if(i == 5) {
+                                    var id = 'sab__row__' + j;
+                                }
+                                else if(i == 6) {
+                                    var id = 'dom__row__' + (j + 1);
+                                }
+                                else {
+                                    var id = 'seg__row__' + (j + 1);
+                                }
+                                
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+
+                        break;
+                    case 3:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'qua__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'qui__row__' + j;
+                                }
+                                else if(i == 3) {
+                                    var id = 'sex__row__' + j;
+                                }
+                                else if(i == 4) {
+                                    var id = 'sab__row__' + j;
+                                }
+                                else if(i == 5) {
+                                    var id = 'dom__row__' + (j + 1);
+                                }
+                                else if(i == 6) {
+                                    var id = 'seg__row__' + (j + 1);
+                                }
+                                else {
+                                    var id = 'ter__row__' + (j + 1);
+                                }
+                                
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+
+                        break;
+                    case 4:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'qui__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'sex__row__' + j;
+                                }
+                                else if(i == 3) {
+                                    var id = 'sab__row__' + j;
+                                }
+                                else if(i == 4) {
+                                    var id = 'dom__row__' + (j + 1);
+                                }
+                                else if(i == 5) {
+                                    var id = 'seg__row__' + (j + 1);
+                                }
+                                else if(i == 6) {
+                                    var id = 'ter__row__' + (j + 1);
+                                }
+                                else {
+                                    var id = 'qua__row__' + (j + 1);
+                                }
+                                
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+                    
+                        break;
+                    case 5:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'sex__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'sab__row__' + j;
+                                }
+                                else if(i == 3) {
+                                    var id = 'dom__row__' + (j + 1);
+                                }
+                                else if(i == 4) {
+                                    var id = 'seg__row__' + (j + 1);
+                                }
+                                else if(i == 5) {
+                                    var id = 'ter__row__' + (j + 1);
+                                }
+                                else if(i == 6) {
+                                    var id = 'qua__row__' + (j + 1);
+                                }
+                                else {
+                                    var id = 'qui__row__' + (j + 1);
+                                }
+                                
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+
+                        break;
+                    default:
+                        for(var i=1; i<=7; i++) {
+                            var cont = i;
+
+                            for(var j=1; cont<=contDays; j++) {
+                                if(i == 1) {
+                                    var id = 'sab__row__' + j;
+                                }
+                                else if(i == 2) {
+                                    var id = 'dom__row__' + (j + 1);
+                                }
+                                else if(i == 3) {
+                                    var id = 'seg__row__' + (j + 1);
+                                }
+                                else if(i == 4) {
+                                    var id = 'ter__row__' + (j + 1);
+                                }
+                                else if(i == 5) {
+                                    var id = 'qua__row__' + (j + 1);
+                                }
+                                else if(i == 6) {
+                                    var id = 'qui__row__' + (j + 1);
+                                }
+                                else {
+                                    var id = 'sex__row__' + (j + 1);
+                                }
+                                
+                                document.getElementById(id).innerHTML = (cont);
+
+                                if((cont += 7) > contDays) {
+                                    break;
+                                }
+                            }
+                        }
+                }
+            };
+        </script>
+    </body>
+</html>

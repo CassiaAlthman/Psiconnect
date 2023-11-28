@@ -19,11 +19,45 @@
                     <h2 class="solicitacoes__subtitulo">Solicitações</h2>
                 </div>
             </div>
+            <div class="menu__solicitacoes__scroll__format">
+                <div class="menu__solicitacoes__scroll" id="scroll" name="scroll">
+                </div>
+            </div>
             <div class="menu__solicitacoes__buttons">
                 <button class="menu__solicitacoes__andamento__button" type="button" onclick="window.location.href = 'menuSolicitacoesAndamento.html'">Solicitações em Andamento</button>
                 <button class="menu__solicitacoes__voltar__button" type="button" onclick="window.location.href = 'menuAluno.html'">Voltar</button>
             </div>
         </main>
         <footer></footer>
+        <script type="text/javascript" src="javascript/papaparse.min.js"></script>
+        <script>
+            window.onload = function adicionaElementosSolicitacoes() {
+                fetch('banco_de_dados/tb_consulta.csv').then(response => response.text()).then(csv => {
+                    const json = Papa.parse(csv, {header: true, dynamicTyping: true});
+
+                    var html = '';
+                    var buttons = '<div class="menu__solicitacoes__label__buttons">\n<button class="menu__solicitacoes__aceitar__button" type="button" onclick="aceitarSolicitacao();">Aceitar</button>\n<button class="menu__solicitacoes__recusar__button" type="button" onclick="cancelarSolicitacao();">Recusar</button>\n</div>';
+
+                    for(var i=0; i<json['data'].length; i++) {
+                        var data = json['data'][i]['dt_consulta'];
+                        
+                        if(json['data'][i]['fg_aceito'] == 0 && json['data'][i]['fg_pendente'] == 1) {
+                            html += '<div class="menu__solicitacoes__background__label">\n' + '<label class="menu__solicitacoes__label">Data: ' + data + '\n' + '</label>' + '\n' + buttons + '\n' + '</div>\n';
+                        }
+                    }
+
+                    console.log(html);
+                    document.getElementById('scroll').innerHTML = (html);
+                });
+            };
+
+            function aceitarSolicitacao() {
+                window.location.href = "menuSolicitacaoAlunoConfirmacao.html";
+            }
+            
+            function cancelarSolicitacao() {
+                window.location.href = "menuSolicitacaoAlunoCancelamento.html";
+            };
+        </script>
     </body>
 </html>

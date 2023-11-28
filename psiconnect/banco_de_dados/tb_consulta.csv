@@ -1,1 +1,4 @@
-cd_consulta,dt_consulta,cd_paciente,cd_aluno,ds_link,fg_pendente,fg_cancelado,cd_usuario_inclusao,dt_inclusao,cd_usuario_alteracao,dt_alteracao,fg_excluido
+cd_consulta,dt_consulta,cd_paciente,cd_aluno,ds_link,ds_duracao_consulta_minutos,fg_pendente,fg_aceito,fg_concluido,fg_cancelado,cd_usuario_inclusao,dt_inclusao,cd_usuario_alteracao,dt_alteracao,fg_excluido
+1,2023-11-23 14:00:00,1,2,null,30,0,0,1,0,1,2023-11-18 15:30:00,null,null,0
+2,2023-12-06 16:40:00,1,2,null,0,1,0,0,0,1,2023-11-24 17:50:00,null,null,0
+3,2023-12-12 14:20:00,1,2,null,0,1,1,0,0,1,2023-11-27 14:50:00,null,null,0

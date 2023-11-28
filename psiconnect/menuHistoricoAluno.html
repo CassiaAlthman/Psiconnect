@@ -20,12 +20,52 @@
                         <h2 class="historico__subtitulo">Histórico</h2>
                     </div>
                 </div>
+                <div class="menu__historio__scroll__format">
+                    <div class="menu__historio__scroll" id="scroll" name="scroll">
+                    </div>
+                </div>
                 <div class="menu__historico__aluno__end__format">
                     <button class="menu__historico__voltar" type="button" onclick="window.location.href = 'menuAluno.html'">Voltar</button>
-                    <h3 class="menu__historico__aluno__total__horas">Total Horas:</h3>
+                    <h3 class="menu__historico__aluno__total__horas" id="total_horas" name="total_horas"></h3>
                 </div>
             </div>
         </main>
         <footer></footer>
+        <script type="text/javascript" src="javascript/papaparse.min.js"></script>
+        <script>
+            window.onload = function adicionaElementosHistorico() {
+                fetch('banco_de_dados/tb_consulta.csv').then(response => response.text()).then(csv => {
+                    const json = Papa.parse(csv, {header: true, dynamicTyping: true});
+
+                    var total_minutos = 0;
+                    var html = '';
+
+                    for(var i=0; i<json['data'].length; i++) {
+                        total_minutos += json['data'][i]['ds_duracao_consulta_minutos'];
+
+                        var data = json['data'][i]['dt_consulta'];
+                        
+                        if(json['data'][i]['fg_cancelado'] == 1) {
+                            var status = 'Cancelado';
+                            var imgStatus = '<svg height="100" width="100"><circle cx="50" cy="50" r="20" stroke-width="0" fill="#F14336" /></svg>';
+                        }
+                        else if(json['data'][i]['fg_pendente'] == 1) {
+                            continue;
+                        }
+                        else if (json['data'][i]['fg_concluido'] == 1) {
+                            var status = 'Concluído'
+                            var imgStatus = '<svg height="100" width="100"><circle cx="50" cy="50" r="20" stroke-width="0" fill="#4CDD6B" /></svg>';
+                        }
+
+                        html += '<div class="menu__historico__background__label">\n' + '<label class="menu__historico__label" id="' + 'nome_label_' + i + '>\n' + '</label>\n' + '<label class="menu__historico__label">Data: ' + data + '\n' + '</label>' + '\n' + '<label class="menu__historico__label">Status: ' + status + imgStatus + '\n' + '</label>' + '\n' + '</div>\n';
+                    }
+
+                    document.getElementById('scroll').innerHTML = (html);
+
+                    var total_horas = (total_minutos / 60).toFixed(2);
+                    document.getElementById('total_horas').innerHTML = ("Total Horas: " + total_horas);
+                });
+             };
+        </script>
     </body>
 </html>

@@ -15,7 +15,7 @@
                 <input class="menu__perfil" type="button">
             </div>
             <div class="menu__button">
-                <button class="menu__paciente__agenda" type="button" onclick="window.location.href = 'menuAgenda.html'">Agenda</button>
+                <button class="menu__paciente__agenda" type="button" onclick="verificaSolicitacoes();">Agenda</button>
                 <button class="menu__paciente__historico" type="button" onclick="window.location.href = 'menuHistoricoPaciente.html'">Histórico</button>
             </div>
             <div class="menu__button__sair">
@@ -23,5 +23,30 @@
             </div>
         </main>
         <footer></footer>
+        <script type="text/javascript" src="javascript/papaparse.min.js"></script>
+        <script>
+            function verificaSolicitacoes() {
+                fetch('banco_de_dados/tb_consulta.csv').then(response => response.text()).then(csv => {
+                    const json = Papa.parse(csv, {header: true, dynamicTyping: true});
+
+                    for(var i=0; i<json['data'].length; i++) {
+
+                        if(json['data'][i]['fg_pendente'] == 1) {
+                            var fg_pendente = true;
+                        }
+                        else {
+                            var fg_pendente = false;
+                        }
+                    }
+
+                    if(fg_pendente == true) {
+                        window.location.href = "menuSolicitacaoPacienteCancelar.html";
+                    }
+                    else {
+                        window.location.href = "menuAgenda.html";
+                    }
+                });
+            };
+        </script>
     </body>
 </html>

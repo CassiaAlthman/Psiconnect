@@ -54,13 +54,32 @@
                 var email = document.getElementById('email__login').value;
                 var senha = document.getElementById('password__login').value;
 
-                //if (email == '' || senha == '') {
-                    //window.alert('Por favor insira os dados nos campos de email/senha');
-                    //return
-                //}
+                if (email == '' || senha == '') {
+                    window.alert('Por favor insira os dados nos campos de email/senha');
+                    return
+                }
 
-                
+                fetch('banco_de_dados/tb_usuario.csv').then(response => response.text()).then(csv => {
+                    const json = Papa.parse(csv, {header: true, dynamicTyping: true});
+                    
+                    for(var i=0; i<json.data.length; i++) {
+                        if(email == json['data'][i]['ds_email'] && senha == json['data'][i]['ds_senha'] && json['data'][i]['fg_estudante'] == 1 && json['data'][i]['fg_excluido'] == 0) {
+                            var fg_usuario_encontrado = 1;
+                            return window.location.href = "menuAluno.html";
+                        }
+                        else if(email == json['data'][i]['ds_email'] && senha == json['data'][i]['ds_senha'] && json['data'][i]['fg_estudante'] == 0 && json['data'][i]['fg_excluido'] == 0) {
+                            var fg_usuario_encontrado = 1;
+                            return window.location.href = "menuPaciente.html";
+                        }
+                        else {
+                            var fg_usuario_encontrado = 0;
+                        }
+                    }
 
+                    if(fg_usuario_encontrado == 0) {
+                        return window.alert('Email ou senha incorretos');
+                    }
+                });
             };
         </script>
     </body>

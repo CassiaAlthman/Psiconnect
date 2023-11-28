@@ -17,11 +17,96 @@
             <div class="menu__solicitacao__paciente__cancelar__conteudo">
                 <h2 class="menu__solicitacao__paciente__cancelar__titulo">Você já possui uma solicitação em<br>&nbsp&nbspandamento. Deseja cancelá-la?</h2>
                 <div class="menu__solicitacao__paciente__cancelar__button">
-                    <button class="menu__solicitacao__cancelar">Cancelar</button>
-                    <button class="menu__solicitacao__voltar">Voltar</button>
+                    <button class="menu__solicitacao__cancelar" type="button" onclick="cancelarSolicitacao();">Cancelar</button>
+                    <button class="menu__solicitacao__voltar" type="button" onclick="window.location.href = 'menuPaciente.html'">Voltar</button>
                 </div>
             </div>
         </main>
         <footer></footer>
+        <script type="text/javascript" src="javascript/papaparse.min.js"></script>
+        <script src="javascript/alteraStatusArquivos.js"></script>
+        <script>
+            function cancelarSolicitacao() {
+                fetch('banco_de_dados/tb_consulta.csv').then(response => response.text()).then(csv => {
+                    const json = Papa.parse(csv, {header: true, dynamicTyping: true});
+                    
+                    for(var i=0; i<json['data'].length; i++) {
+                        if(json['data'][i]['fg_pendente'] == 1) {
+                            var cd_consulta = json['data'][i]['cd_consulta'];
+                        }
+                    }
+
+                    gerarCsv(cd_consulta);
+
+                    window.location.href = "menuSolicitacaoPacienteCancelamento.html";
+                });
+            };
+
+            function gerarCsv(cd_consulta) {
+                var csvDados = "cd_consulta,dt_consulta,cd_paciente,cd_aluno,ds_link,fg_pendente,fg_concluido,fg_cancelado,cd_usuario_inclusao,dt_inclusao,cd_usuario_alteracao,dt_alteracao,fg_excluido\n";
+
+                fetch('banco_de_dados/tb_consulta.csv').then(response => response.text()).then(csv => {
+                    const json = Papa.parse(csv, {header: true, dynamicTyping: true});
+                    
+                    var dados = [];
+
+                    for(var i=0; i<json['data'].length; i++) {
+                        if(json['data'][i]['cd_consulta'] == cd_consulta) {
+                            dados.push({
+                                cd_consulta: json['data'][i]['cd_consulta'],
+                                dt_consulta: json['data'][i]['dt_consulta'],
+                                cd_paciente: json['data'][i]['cd_paciente'],
+                                cd_aluno: json['data'][i]['cd_aluno'],
+                                ds_link: json['data'][i]['ds_link'],
+                                fg_pendente: 0,
+                                fg_concluido: 0,
+                                fg_cancelado: 1,
+                                cd_usuario_inclusao: json['data'][i]['cd_usuario_inclusao'],
+                                dt_inclusao: json['data'][i]['dt_inclusao'],
+                                cd_usuario_alteracao: json['data'][i]['cd_paciente'],
+                                dt_alteracao: json['data'][i]['dt_alteracao'],
+                                fg_excluido: json['data'][i]['fg_excluido']
+                            });
+                        }
+                        else {
+                            dados.push({
+                                cd_consulta: json['data'][i]['cd_consulta'],
+                                dt_consulta: json['data'][i]['dt_consulta'],
+                                cd_paciente: json['data'][i]['cd_paciente'],
+                                cd_aluno: json['data'][i]['cd_aluno'],
+                                ds_link: json['data'][i]['ds_link'],
+                                fg_pendente: json['data'][i]['fg_pendente'],
+                                fg_concluido: json['data'][i]['fg_concluido'],
+                                fg_cancelado: json['data'][i]['fg_cancelado'],
+                                cd_usuario_inclusao: json['data'][i]['cd_usuario_inclusao'],
+                                dt_inclusao: json['data'][i]['dt_inclusao'],
+                                cd_usuario_alteracao: json['data'][i]['cd_usuario_alteracao'],
+                                dt_alteracao: json['data'][i]['dt_alteracao'],
+                                fg_excluido: json['data'][i]['fg_excluido']
+                            });
+                        }
+                    }
+
+                    dados.forEach(function(row) {
+                        csvDados += row.cd_consulta;
+                        csvDados += ',' + row.dt_consulta;
+                        csvDados += ',' + row.cd_paciente;
+                        csvDados += ',' + row.cd_aluno;
+                        csvDados += ',' + row.ds_link;
+                        csvDados += ',' + row.fg_pendente;
+                        csvDados += ',' + row.fg_concluido;
+                        csvDados += ',' + row.fg_cancelado;
+                        csvDados += ',' + row.cd_usuario_inclusao;
+                        csvDados += ',' + row.dt_inclusao;
+                        csvDados += ',' + row.cd_usuario_alteracao;
+                        csvDados += ',' + row.dt_alteracao;
+                        csvDados += ',' + row.fg_excluido;
+                        csvDados += '\n';
+                    }) 
+
+                    cancelaStatusConsultaPaciente(csvDados);
+                });
+            };
+        </script>
     </body>
 </html>
